@@ -2,6 +2,8 @@
 
 This Go program executes random SELECT queries against [Sysbench](https://github.com/akopytov/sysbench) test database. It simulates database load by generating random query conditions, controlling QPS (Queries Per Second), and reporting detailed performance metrics such as success rates, failure rates, and query latencies.
 
+In most cases, `sysbench run` command meet the requirement. But the sysbench's query pattern is limited and sometime you need more query pattern randomly. This tool is supposed to expected such a case.  particularly useful for stress testing and benchmarking database performance under controlled query loads.
+
 # Features
 - Random Query Generations: Fields, tables, and conditions are generated randomly.
 - Multiple Databases and Tables: Supports running queries across multiple databases and tables.
